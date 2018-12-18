@@ -1,0 +1,546 @@
+:root {
+    
+    --bg-color: red;
+    
+}
+
+body {
+
+          background: rgb(96, 124, 138, 0.2);
+          margin: auto;
+
+      }
+
+      .header {
+
+          width: 100vw;
+          height: 12.5vh;
+          background-color: #607C8A;
+
+      }
+
+      .secondheader {
+
+          width: 100vw;
+          height: 12.5vh;
+
+
+      }
+
+      .timelinetitlecontainer {
+
+          margin: auto;
+          width: 50%;
+          padding-top: 7vh;
+
+      }
+
+      h1 {
+
+          text-align: center;
+          margin: auto;
+          color: white;
+          font: 3vh "Roboto", sans-serif;
+          display: block;
+          line-height: 1em;
+
+      }
+
+      p {
+
+          color: white;
+          font-family: 'Open Sans', sans-serif;
+          margin: auto;
+          text-align: center;
+          display: auto;
+          vertical-align: middle;
+          font-size: 20px;
+          pointer-events: none;
+
+      }
+
+      p .markertext {}
+
+      .timercontainer {
+
+          margin: auto;
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+          background: #fff;
+          width: 50vw;
+          height: 7vh;
+          border-radius: 10vw 10vw;
+          display: table;
+          vertical-align: middle;
+
+      }
+
+      .timercentering {
+
+          margin: auto;
+          text-align: center;
+          vertical-align: middle;
+      }
+
+      #timerobject {
+
+          display: inline-block;
+          color: #607C8A;
+          font: 3vh "Roboto", sans-serif;
+          display: inline;
+          vertical-align: middle;
+          padding-left: 1vw;
+          padding-right: 1vw;
+
+      }
+
+      .chronometercontainer {
+
+          display: inline-block;
+          vertical-align: middle;
+          background: url("fallback/chronometer.png");
+          background-image: url(SVG/chronometer.svg);
+          background-size: 100% 100%;
+          width: 7vw;
+          height: 7vh;
+          background-repeat: no-repeat;
+
+
+      }
+
+      .clear {
+
+          height: 2vh;
+      }
+
+      #playbuttontxt {
+
+          color: #34495e;
+          font-size: 24;
+          -webkit-touch-callout: none;
+          /* iOS Safari */
+          -webkit-user-select: none;
+          /* Safari */
+          -khtml-user-select: none;
+          /* Konqueror HTML */
+          -moz-user-select: none;
+          /* Firefox */
+          -ms-user-select: none;
+          /* Internet Explorer/Edge */
+          user-select: none;
+          /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+      }
+
+      .container {
+
+          /* Background */
+
+          background-color: #ecf0f1;
+
+          /* Structure */
+
+          display: auto;
+          /*max-height: 80vh;*/
+          margin: auto;
+          display: block;
+          border-spacing: 10px 10px;
+
+          /* Borders */
+
+          border-style: none;
+          border-width: 1px;
+          border-color: white;
+
+      }
+
+      .container .maingraphcontainer {
+
+          max-width: inherit;
+          height: 30vh;
+          display: flex;
+          border-style: none;
+          border-left: dotted;
+          border-right: dotted;
+          border-bottom: none;
+          border-top: 0px;
+          border-width: 1px;
+          border-color: rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+
+      }
+
+      .container .minigraphcontainer {
+
+          max-width: inherit;
+          display: flex;
+          border-style: none;
+          border-left: dotted;
+          border-right: dotted;
+          border-bottom: none;
+          border-top: 0px;
+          border-width: 1px;
+          border-color: rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+          height: 10vh;
+
+      }
+
+      #main {
+
+          width: 100vw;
+          height: 75vh;
+          background: transparent;
+
+
+      }
+
+      #graph {
+
+          background-color: rgb(255, 255, 255, 1);
+          padding: 0px;
+          max-height: inherit;
+          max-width: inherit;
+
+      }
+
+      #minigraph {
+
+          background-color: rgb(255, 255, 255, 1);
+          padding: 0px;
+          max-height: inherit;
+          max-width: inherit;
+
+      }
+
+      .container .buttons {
+
+          background-color: transparent;
+
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(99, 15vh);
+          grid-column-gap: 1vh;
+          text-align: center;
+          overflow: scroll;
+          height: 10vh;
+
+      }
+
+      .container .emojicontainer {
+
+          background-color: white;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(99, 64px);
+          grid-column-gap: 15px;
+          text-align: center;
+          overflow: scroll;
+          height: 7vh;
+          border-radius: 2em 2em;
+
+      }
+
+      .emoji {
+
+          width: 64px;
+          height: 64px;
+          /* background: url(sheets/sheet_emojione_64_indexed_128.png) 0 0; */
+
+      }
+
+      .container .plusminus {
+
+          background-color: transparent;
+          margin: auto;
+          text-align: center;
+          width: 100vw;
+          height: 10vh;
+
+      }
+
+      .button {
+
+          background-color: white;
+          
+
+          /* Structure */
+
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+          /*padding-left: 1vh;*/
+          /*padding-right: 1vh;*/
+          width: 15vh;
+          height: 8vh;
+          /*display: inline-grid;*/
+
+          /* Borders */
+
+          border-style: none;
+          border-width: 0.05em;
+          border-color: grey;
+          border-radius: 3vh;
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.2);
+
+          /* Hover Effect */
+
+          transition: 0.5s;
+          margin: auto;
+          display: inline-block;
+
+      }
+
+      .button:hover {
+
+          /*display: block;*/
+          /*transform: translateY(-1em);*/
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+
+      }
+
+      .buttontext {
+
+
+          /*text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);*/
+          font: 1.75vh "Roboto", sans-serif;
+          font-weight: 500;
+          color: #607C8A;
+          line-height: 1.75vh;
+          -webkit-touch-callout: none;
+          /* iOS Safari */
+          -webkit-user-select: none;
+          /* Safari */
+          -khtml-user-select: none;
+          /* Konqueror HTML */
+          -moz-user-select: none;
+          /* Firefox */
+          -ms-user-select: none;
+          /* Internet Explorer/Edge */
+          user-select: none;
+          /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+      }
+
+      .plus {
+
+          background-color: white;
+
+          /* Structure */
+
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+          /*padding-left: 1vh;*/
+          /*padding-right: 1vh;*/
+          width: 15vh;
+          height: 8vh;
+          display: inline-block;
+          margin: auto;
+
+          /* Borders */
+
+          border-style: none;
+          border-width: 0.2vh;
+          border-color: rgb(0,0,0,0.2);
+          border-radius: 3vh;
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.15);
+
+          /* Hover Effect */
+
+          transition: 0.5s;
+
+      }
+
+    /*  .plus:hover {
+
+          transform: scale(0.90);
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+
+      } */
+
+      .minus {
+
+          background-color: #e74c3c;
+
+          /* Structure */
+
+          padding: 1vw;
+          display: inline-block;
+          width: 7vw;
+          height: 7vw;
+          margin: auto;
+
+          /* Borders */
+
+          border-style: none;
+          border-width: 1px;
+          border-color: cadetblue;
+          border-radius: 10vw;
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+
+          /* Hover Effect */
+
+          transition: 0.5s;
+      }
+
+      .minus:hover {
+
+          transform: scale(0.90);
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.1);
+
+      }
+
+      #markercontainer {
+
+          position: relative;
+          display: table;
+
+      }
+
+      .markerdiv {
+
+          background-color: white;
+          border-style: none;
+          border-color: cadetblue;
+          border-radius: 0.5vh;
+          width: 2vh;
+          height: 2vh;
+          display: table-cell;
+          position: absolute;
+          font-size: 10px; 
+
+      }
+
+      .markerdiv .p {
+
+          font-size: 8px;
+
+      }
+
+      #timerstart {
+
+          background-color: white;
+
+          /* Structure */
+
+
+          margin: auto;
+          text-align: center;
+          display: inline-block;
+          padding: 1vw;
+          width: 7vw;
+          height: 7vw;
+
+          /* Borders */
+
+          border-style: none;
+          border-width: 1px;
+          border-color: cadetblue;
+          border-radius: 10vw;
+          box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+
+          /* Hover Effect */
+
+          transition: 0.5s;
+
+      }
+
+      #timerstart:hover {
+
+          transform: scale(0.9);
+          /* background-color: #2ecc71;*/
+
+      }
+
+      .divider {
+          width: 0px;
+          display: inline;
+          margin: auto;
+          font-size: 40px;
+
+      }
+
+
+      /* Sliders */
+      /* The switch - the box around the slider */
+      .switch {
+          position: relative;
+          background-color: white !important;
+          display: block;
+          margin: auto;
+          bottom: -1vh;
+          width: 12vh;
+          height: 5vh;
+          
+          /* Borders */
+
+          border-style: none;
+          border-width: 0.25vh;
+          border-color: grey;
+          border-radius: 10vh;
+      }
+
+      /* Hide default HTML checkbox */
+      .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0;
+      }
+
+
+
+      /* The slider */
+      .slider {
+          position: absolute;
+          cursor: pointer;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          -webkit-transition: .4s;
+          transition: .4s;
+          border-radius: 15vh;
+          
+          border-style: solid;
+          border-width: 0.25vh;
+          border-color: grey;
+          border-radius: 10vh;
+      }
+
+      .sliderbutton {
+          position: absolute;
+          cursor: pointer;
+          content: "";
+          height: 4vh;
+          width: 4vh;
+          left: 0.25vh;
+          bottom: 0.25vh;
+          background-color: grey;
+          -webkit-transition: .4s;
+          transition: .4s;
+          border-radius: 50%;
+      }
+
+input:not(:checked) + .slider {
+    
+    background-color: white !important;
+    
+}
+      input:checked + .slider {
+          
+         
+      }
+
+      input:focus + .slider {
+          box-shadow: 0 0 1px #2196F3;
+      }
+
+      input:checked + .slider .sliderbutton {
+          
+          
+          background-color: white !important;
+          -webkit-transform: translateX(7vh);
+          -ms-transform: translateX(7vh);
+          transform: translateX(7vh);
+      }

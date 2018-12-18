@@ -1,0 +1,38 @@
+Notes
+-----
+
+Script custom pour les emoticones peut etre possible. L'utilisation des plugins externes est trop chaude, leur doc suck. Du coup, div simple avec une cell par smiley. C'est parti.
+
+1 - Script run au demarrage: emoticonstart()
+
+    Importation des smileys dans une array, si possible depuis un tileset
+
+    - Deux valeurs, nom de l'emote, emplacement du fichier + eventuellement position sur le tileset si nécessaire.
+    - Plusieurs arrays possibles à prévoir dans la conception du code, mais pas nécessairement à implémenter tout de suite.
+    
+
+2 - Script trigger en cliquant sur le bouton un moment ou sur un petit "+": emoticondisplay()
+
+    Création ou déplacement si déjà créé du "emoticonwidget"
+    
+    - Sa forme épouse parfaitement celle du bouton sur lequel on l'assigne:
+    
+     emoticonwidget.width = button.width;
+     emoticonwidget.height = button.heigth;
+     var activeemoticonbutton = event.target.innerHTML ;
+    
+    - Les fonctionnalités de base du bouton son désactivées et remplacées par celles de l'emoticonwidget
+    
+    
+    
+    - Menu horizontal avec trois emoticones, on peut drag and drop pour les faire défiler
+    - Double tap pour sélectionner le smiley
+    - Si on n'y touche pas 3sec, retour en mode bouton
+    
+
+    https://1drv.ms/u/s!Ag7ZMLa2M9oLje5_nMMNAxMY555gkA
+go installer JDK
+Android Studio
+Node
+npm
+
